@@ -1,0 +1,17 @@
+#!/bin/bash -fxe
+#$ -N LC-WFV_GRIB2
+#$ -l h_rt=2:00:00
+#$ -S /bin/bash
+#$ -pe mpi 1
+#$ -l h_vmem=2G
+#$ -q ded-parallelx.q
+#$ -M patrikb@met.no
+#$ -m abe
+#$ -o /home/patrikb/wavy/LC-WFV/
+#$ -cwd 
+#$ -j y
+# ---------------------------
+module load fimex
+module list
+cd /home/patrikb/wavy/LC-WFV
+./create_grib2_man.py >& create_grib2_man.out
