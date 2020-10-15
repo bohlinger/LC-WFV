@@ -52,10 +52,10 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_10u.grib2"
-            + " --output.type=grib2 --input.config=/home/patrikb/wavy/LC-WFV/wind_height.ncml")
+            + " --output.type=grib2 --input.config=/home/patrikb/LC-WFV/wind_height.ncml")
     tmp=os.system(ustr)
 
     vstr = ("fimex "
@@ -79,10 +79,10 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_10v.grib2"
-            + " --output.type=grib2 --input.config=/home/patrikb/wavy/LC-WFV/wind_height.ncml")
+            + " --output.type=grib2 --input.config=/home/patrikb/LC-WFV/wind_height.ncml")
     tmp=os.system(vstr)
 
     mp2str = ("fimex "
@@ -106,7 +106,7 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_mp2.grib2" 
             + " --output.type=grib2;")
@@ -133,7 +133,7 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_mwd.grib2"
             + " --output.type=grib2;")
@@ -160,7 +160,7 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_tp.grib2"
             + " --output.type=grib2;")
@@ -187,7 +187,7 @@ for lt in lt_lst:
             + " --extract.selectVariables=forecast_reference_time"
             + " --extract.reduceTime.start=" + fc_str
             + " --extract.reduceTime.end=" + fc_str
-            + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+            + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
             + " --output.file=" + outpath
             + "wave_emni_" + fc_fname + "_test_fc_hs.grib2"
             + " --output.type=grib2;")

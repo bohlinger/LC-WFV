@@ -3,8 +3,8 @@ import os
 import sys
 from datetime import datetime, timedelta
 
-sdate = datetime(2020,8,11,6)
-edate = datetime(2020,8,11,6)
+sdate = datetime(2020,10,14,12)
+edate = datetime(2020,10,14,12)
 now = sdate
 while now <= edate:
     init_fname = now.strftime("%Y%m%dT%H")
@@ -38,10 +38,10 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_10u.grib2"
-                + " --output.type=grib2 --input.config=/home/patrikb/wavy/LC-WFV/wind_height.ncml")
+                + " --output.type=grib2 --input.config=/home/patrikb/LC-WFV/wind_height.ncml")
         tmp=os.system(ustr)
 
         vstr = ("fimex "
@@ -65,10 +65,10 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_10v.grib2"
-                + " --output.type=grib2 --input.config=/home/patrikb/wavy/LC-WFV/wind_height.ncml")
+                + " --output.type=grib2 --input.config=/home/patrikb/LC-WFV/wind_height.ncml")
         tmp=os.system(vstr)
 
         mp2str = ("fimex "
@@ -92,7 +92,7 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_mp2.grib2" 
                 + " --output.type=grib2;")
@@ -119,7 +119,7 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_mwd.grib2"
                 + " --output.type=grib2;")
@@ -146,7 +146,7 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_tp.grib2"
                 + " --output.type=grib2;")
@@ -173,7 +173,7 @@ while now <= edate:
                 + " --extract.selectVariables=forecast_reference_time"
                 + " --extract.reduceTime.start=" + fc_str
                 + " --extract.reduceTime.end=" + fc_str
-                + " --output.config=/home/patrikb/wavy/LC-WFV/cdmGribWriterConfig.xml"
+                + " --output.config=/home/patrikb/LC-WFV/cdmGribWriterConfig.xml"
                 + " --output.file=" + outpath
                 + "wave_emni_" + fc_fname + "_test_fc_hs.grib2"
                 + " --output.type=grib2;")
